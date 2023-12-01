@@ -1,0 +1,91 @@
+<!-----------------------------------------------------------------------------------
+|   Nombre y apellido de la autora: Damya Khazzou 
+|   Módulo: Lenguaje de marcas y sistemas de gestión de la información
+|   Unidad: 2
+|   Tarea: Tarea evaluativa 2. Sitio Web
+|   Autoevaluación: https://docs.google.com/document/d/1XNSqf6E1nRG7lYJAGef5m9hlYCuNWxb1LqV2geT_950/edit?usp=sharing
+|   Fecha: 01/12/2023
+|   Descripción: En esta web podemos navegar por diferentes páginas con contenido Otaku. 
+------------------------------------------------------------------------------------>
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Página web con información sobre los mejores Animes actuales">
+        <meta name="keywords" content="Anime, Manga, One Piece, Nanatsu no taizai, Mob Psycho 100">
+
+        <title>HontoniFandesu</title>
+
+        <link rel="short cut icon" href="../multimedia/logoIcono.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../css/estilos.css">
+
+        <style>
+            .paginaActual {
+                background-color: white;
+                color: #ffa23e;
+            }
+
+            .paginaActual li {
+                border-color: white;
+                font-weight: 900;
+            }
+        </style>
+
+    </head>
+    <body>
+        <!-- Cabecera de la página -->
+        <header>
+            <div class="logo">
+                <img src="../multimedia/logo.png" alt="Logotipo de la página">
+            </div>
+            <nav>
+                <ul>
+                    <a href="../index.html"><li>Inicio</li></a>
+                    <a href="./noticias.html"><li>Noticias</li></a>
+                    <a class="paginaActual" href="./categorias.html"><li>Categorías</li></a>
+                    <a href="./contacto.html"><li>Contacto</li></a>
+
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Contenido de la página -->
+        <main>
+            <h1 class="titulos">Categorías</h1>
+
+            <!-- Categorías de Anime -->
+            <div class="contenedorCategorias">
+                <div class="categoriaA categoria">
+                    <div>
+                        <a href="./aventura.html" class="nombreCategorias">AVENTURA</a>
+                    </div>
+                </div>
+                <div class="categoriaB categoria">
+                    <div>
+                        <a href="" class="nombreCategorias">ACCIÓN</a>
+                    </div>
+                </div>
+                <div class="categoriaC categoria">
+                    <div>
+                        <a href="" class="nombreCategorias">OSCUROS</a>
+                    </div>
+                </div>
+                <div class="categoriaD categoria">
+                    <div>
+                        <a href="" class="nombreCategorias">COMEDIA</a>
+                    </div>
+                </div>
+            </div>
+            
+        </main>
+
+        <!-- Pie de página -->
+        <footer>
+            <div>
+                <p>Página web realizada por Damya Khazzou con fines educativos.</p>
+                <a href="">Fuente de las imágenes utilizadas</a>
+            </div>
+        </footer>
+        
+    </body>
+</html>

@@ -1,0 +1,136 @@
+<!-----------------------------------------------------------------------------------
+|   Nombre y apellido de la autora: Damya Khazzou 
+|   Módulo: Lenguaje de marcas y sistemas de gestión de la información
+|   Unidad: 2
+|   Tarea: Tarea evaluativa 2. Sitio Web
+|   Autoevaluación: https://docs.google.com/document/d/1XNSqf6E1nRG7lYJAGef5m9hlYCuNWxb1LqV2geT_950/edit?usp=sharing
+|   Fecha: 01/12/2023
+|   Descripción: En esta web podemos navegar por diferentes páginas con contenido Otaku. 
+------------------------------------------------------------------------------------>
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Página web con información sobre los mejores Animes actuales">
+        <meta name="keywords" content="Anime, Manga, One Piece, Nanatsu no taizai, Mob Psycho 100">
+
+        <title>HontoniFandesu</title>
+
+        <link rel="short cut icon" href="multimedia/logoIcono.ico" type="image/x-icon">
+        <link rel="stylesheet" href="css/estilos.css">
+
+        <style>
+            .paginaActual {
+                background-color: white;
+                color: #ffa23e;
+            }
+            .paginaActual li {
+                border-color: white;
+                font-weight: 900;
+            }
+        </style>
+
+    </head>
+    <body>
+        <!-- Cabecera de la página -->
+        <header>
+            <div class="logo">
+                <img src="multimedia/logo.png" alt="Logotipo de la página">
+            </div>
+            <nav>
+                <ul>
+                    <a class="paginaActual" href="index.html"><li>Inicio</li></a>
+                    <a href="paginas/noticias.html"><li>Noticias</li></a>
+                    <a href="paginas/categorias.html"><li>Categorías</li></a>
+                    <a href="paginas/contacto.html"><li>Contacto</li></a>
+
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Contenido de la página -->
+        <main>
+
+            <!-- Carrusel de imágenes y descripciones -->
+            <div class="slide">
+                <div class="slides">
+                    <img src="./multimedia/slideA.png" alt="Foto de OnePiece">
+                    <div class="descripcionesSlide">
+                        <p>Conoce las últimas novedades sobre tus animes favoritos en HontoniFan</p>
+                    </div>
+                </div>
+                <div class="slides">
+                    <img src="./multimedia/slideB.png" alt="Foto de Mob Psycho 100">
+                    <div class="descripcionesSlide">
+                        <p>En HontoniFan podrás descubrir los mejores animes del momento</p>
+                    </div>
+                </div>
+                <div class="slides">
+                    <img src="./multimedia/slideC.png" alt="Foto de Hunter x Hunter">
+                    <div class="descripcionesSlide">
+                        <p>Te hablaremos de animes de todo tipo, acción, aventuras, comedias y mucho más</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección con el panel lateral y el contenido principal de la página -->
+            <div class="contenedorPrincipal">
+                <aside>
+                    <h2>Género</h2>
+                    <a href="./paginas/aventura.html">Aventura</a>
+                    <a href="">Acción</a>
+                    <a href="">Oscuros</a>
+                    <a href="">Comedia</a>
+                </aside>
+
+                <section>
+                    <article class="contenedorMejorAnime">
+                        <h2>El mejor anime de este mes no puede ser otro que One Piece</h2>
+                        <div>
+                            <p>One Piece vuelve a ser el anime más votado del mes, 
+                                esta obra de Eiichiro Oda no deja de sorprendernos 
+                                día tras día con sus alucinantes batallas y aventuras por el Grand Line.
+                                Estas últimas semanas hemos visto como Kaido uno de los 4 emperadores, es
+                                derrotado por Luffy después de su nueva transformación, el Gear 5.
+                                La nueva tranformación de Luffy ha sorprendido a todos/as los/as fans,
+                                nadie se esperaba que el despertar de la Gomu Gomu no Mi fuera tan especial,
+                                esto ha conseguido que los cinco ancianos del gobierno mundial estén muy
+                                alerta por lo que puede suceder en el futuro.
+                                <span>¡El próximo mes te contaremos más sobre tu anime favorito nuestro querido Fandesu!</span> </p>
+                            <img src="./multimedia/majorAnime.png" alt="Foto del mejor anime del mes">
+                        </div>
+                    </article>
+                </section>
+
+            </div>
+
+        </main>
+
+        <!-- Pie de página -->
+        <footer>
+            <div>
+                <p>Página web realizada por Damya Khazzou con fines educativos.</p>
+                <a href="">Fuente de las imágenes utilizadas</a>
+            </div>
+        </footer>
+
+        <!-- Código JavaScript que da funcionalidad al carrusel de imágenes -->
+        <script>
+            var slideIndex = 0;
+            carousel();
+            
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("slides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none"; 
+                }
+                slideIndex++;
+                if (slideIndex > x.length) {slideIndex = 1} 
+                x[slideIndex-1].style.display = "block"; 
+                setTimeout(carousel, 3000); 
+            }
+        </script>
+        
+    </body>
+</html>

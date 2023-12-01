@@ -1,0 +1,119 @@
+<!-----------------------------------------------------------------------------------
+|   Nombre y apellido de la autora: Damya Khazzou 
+|   Módulo: Lenguaje de marcas y sistemas de gestión de la información
+|   Unidad: 2
+|   Tarea: Tarea evaluativa 2. Sitio Web
+|   Autoevaluación: https://docs.google.com/document/d/1XNSqf6E1nRG7lYJAGef5m9hlYCuNWxb1LqV2geT_950/edit?usp=sharing
+|   Fecha: 01/12/2023
+|   Descripción: En esta web podemos navegar por diferentes páginas con contenido Otaku. 
+------------------------------------------------------------------------------------>
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Página web con información sobre los mejores Animes actuales">
+        <meta name="keywords" content="Anime, Manga, One Piece, Nanatsu no taizai, Mob Psycho 100">
+
+        <title>HontoniFandesu</title>
+
+        <link rel="short cut icon" href="../multimedia/logoIcono.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../css/estilos.css">
+
+        <style>
+            .paginaActual {
+                background-color: white;
+                color: #ffa23e;
+            }
+
+            .paginaActual li {
+                border-color: white;
+                font-weight: 900;
+            }
+        </style>
+
+    </head>
+    <body>
+        <!-- Cabecera de la página -->
+        <header>
+            <div class="logo">
+                <img src="../multimedia/logo.png" alt="Logotipo de la página">
+            </div>
+            <nav>
+                <ul>
+                    <a href="../index.html"><li>Inicio</li></a>
+                    <a class="paginaActual" href="./noticias.html"><li>Noticias</li></a>
+                    <a href="./categorias.html"><li>Categorías</li></a>
+                    <a href=".contacto.html"><li>Contacto</li></a>
+
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Contenido de la página -->
+        <main>
+            <h1 class="titulos">Noticias</h1>
+
+            <!-- Sección con el panel lateral y el contenido principal de la página -->
+            <div class="contenedorPrincipal">
+                <aside>
+                    <h2>Género</h2>
+                    <a href="./aventura.html">Aventura</a>
+                    <a href="">Acción</a>
+                    <a href="">Oscuros</a>
+                    <a href="">Comedia</a>
+                </aside>
+
+                <!-- Sección que recoge las diferentes noticias -->
+                <section>
+                    <article class="contenedorNoticia">
+                        <img src="../multimedia/noticiaA.jpg" alt="Foto de primera noticia">
+                        <div>
+                            <h2>Luffy regresa en una espectacular figura</h2>
+                            <p>En una emocionante colaboración entre la fabricante TH Studio 
+                                y la distribuidora Statues GK, se ha lanzado al mercado una 
+                                nueva figura independiente que seguramente hará las delicias 
+                                de los fanáticos de One Piece. El protagonista de esta increíble 
+                                pieza es nada menos que Monkey D. Luffy, el carismático líder de los 
+                                Piratas del Sombrero de Paja...</p>
+                            <a href="https://somoskudasai.com/noticias/mercancia-de-anime/one-piece-luffy-regresa-en-una-espectacular-figura/" target="_blank">Leer más</a>
+                        </div>
+                    </article>
+                    <article class="contenedorNoticia">
+                        <img src="../multimedia/noticiaB.png" alt="Foto de primera noticia">
+                        <div>
+                            <h2>Hunter x Hunter ya tiene fecha de regreso</h2>
+                            <p>Ya es oficial. Hunter x Hunter volverá a nuestras vidas el próximo 
+                                4 de noviembre. El manga de Yoshihiro Togashi ha elegido la fecha 
+                                en cuestión para publicar el que será su volumen número 37. En él 
+                                disfrutaremos de los capítulos 381 a 390, que técnicamente NO son nuevos, 
+                                es verdad...</p>
+                            <a href="https://as.com/meristation/2022/09/20/noticias/1663663048_241591.html" target="_blank">Leer más</a>
+                        </div>
+                    </article>
+                    <article class="contenedorNoticia">
+                        <img src="../multimedia/noticiaC.png" alt="Foto de segunda noticia">
+                        <div>
+                            <h2>El final del manga de Hajime no Ippo está decidido</h2>
+                            <p>El manga de Hajime no Ippo destaca por su duración y continúa en la actualidad. 
+                                Con 135 volúmenes publicados ha logrado mantenerse en el gusto del público y 
+                                todo gracias al trabajo del mangaka George Morikawa. Pero ha llegado el momento 
+                                de que este autor piense en el final de su obra...</p>
+                            <a href="https://universo-nintendo.com.mx/2023/01/27/hajime-no-ippo-manga-final-decidido/" target="_blank">Leer más</a>
+                        </div>
+                    </article>
+                </section>
+
+            </div>
+            
+        </main>
+
+        <!-- Pie de página -->
+        <footer>
+            <div>
+                <p>Página web realizada por Damya Khazzou con fines educativos.</p>
+                <a href="">Fuente de las imágenes utilizadas</a>
+            </div>
+        </footer>
+        
+    </body>
+</html>
